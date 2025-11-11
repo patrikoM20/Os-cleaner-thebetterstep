@@ -1,0 +1,19 @@
+biblioteki, które trzeba zainstalować :
+tkinter
+shutil
+os
+re
+
+# 🧹 OS Cleaner
+Prosty program w Pythonie z GUI (tkinter), który usuwa puste i spamowe pliki oraz przenosi wartościowe pliki do wskazanego folderu.
+
+## Funkcje
+- Usuwa puste pliki
+- Wykrywa i usuwa pliki z losowymi nazwami (spam)
+- Przenosi niepuste pliki do wybranego folderu
+- Wygodny interfejs graficzny w tkinter
+
+## Uruchomienie
+```bash
+python os_cleaner_gui.py
+
