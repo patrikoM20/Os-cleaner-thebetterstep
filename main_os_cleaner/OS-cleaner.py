@@ -54,13 +54,6 @@ def os_cleaner_gui(start_path: str, target_path: str, log_box: tk.Text, delete_s
         except Exception as e:
             log_box.insert(tk.END, f"⚠️ Błąd przy {file}: {e}\n")
 
-        # Aktualizacja paska postępu
-        percent = int((i / total) * 100)
-        progress_bar["value"] = percent
-        progress_label.config(text=f"Postęp: {percent}% ({i}/{total})")
-        log_box.see(tk.END)
-        root.update_idletasks()
-
     # Obsługa spamowych plików
     if suspected_spam:
         log_box.insert(tk.END, "\n⚠️ Wykryto pliki spam:\n")
